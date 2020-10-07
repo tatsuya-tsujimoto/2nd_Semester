@@ -5,9 +5,14 @@
 
 class Unit
 {
+
 public:
     Unit();
     ~Unit();
+    void PrintState();
+
+private:
+
     int m_hp;
     int m_tec;
     int m_luc;
@@ -17,9 +22,6 @@ public:
     int m_mde;
     int m_mag;
 
-
-
-private:
 
 
 };
