@@ -18,6 +18,7 @@ void Test::SetValue(int value)
 
 int Test::GetValue()const
 {
+
 	return Value;
 }
 
@@ -26,6 +27,10 @@ int main()
 	Test test;
 	test.SetValue(1000);
 	int ans = test.GetValue();
+
+	const Test* pTest = &test;
+	//pTest->SetValue(10);
+	pTest->GetValue();
 
 	return 0;
 }
