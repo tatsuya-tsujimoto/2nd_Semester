@@ -31,7 +31,7 @@ Employee::POST Employee::GetPost()const
 
 bool Employee::operator>(const Employee& emp_)const
 {
-	if (m_Post > emp_.GetPost())
+	if (this->m_Post > emp_.GetPost())	// m_Postにthis->を付けてもいける 追記：好み or ルールで付けるか付けないか
 	{
 		return true;
 	}
